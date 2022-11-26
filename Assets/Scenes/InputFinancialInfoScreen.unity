@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9339623, g: 0.7107511, b: 0.7107511, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -813,7 +813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41, y: 12}
+  m_AnchoredPosition: {x: -41, y: 14}
   m_SizeDelta: {x: 152.8772, y: 25.7263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &261758339
@@ -1109,8 +1109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 213, y: -30.965}
-  m_SizeDelta: {x: 356.23, y: 242.07}
+  m_AnchoredPosition: {x: 215.2772, y: -25.897}
+  m_SizeDelta: {x: 343.6968, y: 231.93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &376658788
 MonoBehaviour:
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.15563066, g: 0.16121632, b: 0.5754717, a: 1}
+  m_Color: {r: 0.55773103, g: 0.8281966, b: 0.9433962, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2083,7 +2083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54, y: 30}
+  m_AnchoredPosition: {x: -54, y: 32}
   m_SizeDelta: {x: 211.5314, y: 18.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &642038267
@@ -2360,7 +2360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44, y: 58}
+  m_AnchoredPosition: {x: -42, y: 63}
   m_SizeDelta: {x: 152.8772, y: 25.7263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &738854088
@@ -3518,7 +3518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 291.9698, y: 60}
+  m_AnchoredPosition: {x: 294, y: 48}
   m_SizeDelta: {x: 391.9397, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1191495166
@@ -3541,13 +3541,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-Current Savings:  total amount of money in your savings account. \n-Investable
-    accounts: the amount of money invested  in brokerage, stocks, etc. \n-Retirement
-    Account:  the amount of money in any retirement account you may have. \n-Annual
-    Expenses: what you spend in a year. (monthly expenses * 12). \n-Safe Withdrawal
-    Rate: a minimum percentage of money that you will withdraw in retirement to cover
-    your basic need expenses. The recommended percentage is 4%. Please enter a whole
-    number. \n-Yearly Savings: the amount of money you save each year."
+  m_text: " - Current Savings:  total amount of money in your savings account. \n-
+    Investable accounts: the amount of money invested  in brokerage, stocks, etc.
+    \n - Retirement Account:  the amount of money in any retirement account you may
+    have. \n - Annual Expenses: what you spend in a year. \n(monthly expenses * 12).
+    \n - Safe Withdrawal Rate: a minimum percentage of money that \nyou will withdraw
+    in retirement to cover your basic need expenses. The recommended percentage is
+    4%. Please enter a whole number. \n - Yearly Savings: the amount of money you
+    save each year."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3574,8 +3575,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4024,12 +4025,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

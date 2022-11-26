@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Collections;
 using System;
-public class NewUser : MonoBehaviour
+public class NewUser
 {
-    public class NewUserTemplate
-    {
-	public string userName;
+    
+	public String userName;
 	public float currentSavings;
 	public float investableAccounts;
 	public float retirementAccount;
@@ -18,11 +16,11 @@ public class NewUser : MonoBehaviour
 	public float yearlySavings;
 	
 //constructor
-	public NewUserTemplate(string name, float csavings, float iaccount, float raccount, float expenses, int rate, float ysavings)
+	public NewUser(string name, float csavings, float iaccount, float raccount, float expenses, int rate, float ysavings)
 	{
 	   userName = name;
 	   currentSavings = csavings;
-           investableAccounts = iaccount;
+       investableAccounts = iaccount;
 	   retirementAccount = raccount;
 	   annualExpenses = expenses;
 	   safeWithdrawalRate = rate;
@@ -31,88 +29,74 @@ public class NewUser : MonoBehaviour
 // get methods
 	public String getUserName()
 	{
-	   return name;
+	   return userName;
 	}
 
 	public float getCurrentSavings()
 	{
-	   return csavings;
+	   return currentSavings;
 	}
 
 	public float getInvestableAccounts()
 	{
-	   return iaccount;
+	   return investableAccounts;
 	}
 
 	public float getRetirementAccounts()
 	{
-	   return raccount;
+	   return retirementAccount;
 	}
 
 	public float getAnnualExpenses()
 	{
-	   return expenses;
+	   return annualExpenses;
 	}
 
 	public int getSafeWithdrawalRate()
 	{
-	   return rate;
+	   return safeWithdrawalRate;
 	}
 
 	public float getYearlySavings()
 	{
-	   return ysavings;
+	   return yearlySavings;
 	}
 
 //set methods	
 	public void setUserName(String n)
 	{
-	   name =n;
+	   userName =n;
 	}
 
 	public void setCurrentSavings(float f)
 	{
-	   csavings = f;
+	   currentSavings = f;
 	}
 
 	public void setInvestableAccounts(float f)
 	{
-	   iaccount = f;
+	   investableAccounts = f;
 	}
 
 	public void setRetirementAccounts(float f)
 	{
-	   raccount = f;
+	   retirementAccount = f;
 	}
 
 	public void setAnnualExpenses(float f)
 	{
-	   expenses = f;
+	   annualExpenses = f;
 	}
 
 	public void setSafeWithdrawalRate(int i)
 	{
-	   rate = i;
+	   safeWithdrawalRate = i;
 	}
 
 	public void setYearlySavings(float f)
 	{
-	   ysavings =f;
+	   yearlySavings =f;
 	}
 
-    }
-
-	
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+	
