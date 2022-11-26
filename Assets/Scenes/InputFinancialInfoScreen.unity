@@ -447,6 +447,7 @@ GameObject:
   - component: {fileID: 156383858}
   - component: {fileID: 156383857}
   - component: {fileID: 156383856}
+  - component: {fileID: 156383859}
   m_Layer: 5
   m_Name: ExtiButton
   m_TagString: Untagged
@@ -472,8 +473,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.10218, y: -104}
-  m_SizeDelta: {x: 135.7975, y: 19.0504}
+  m_AnchoredPosition: {x: -79.42639, y: -257.6649}
+  m_SizeDelta: {x: 105.31123, y: 34.67023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &156383856
 MonoBehaviour:
@@ -518,7 +519,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 156383857}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 156383859}
+        m_TargetAssemblyTypeName: exitButtonQuitApp, Assembly-CSharp
+        m_MethodName: quitApp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &156383857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +570,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156383854}
   m_CullTransparentMesh: 1
+--- !u!114 &156383859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156383854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99408c8336abc9243a35adbb1e0b8137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &174574698
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +743,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202121299}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -362.6667, y: -149.66667, z: -10}
+  m_LocalPosition: {x: -699.901, y: -138.66669, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -813,7 +838,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41, y: 14}
+  m_AnchoredPosition: {x: -301, y: 23.068}
   m_SizeDelta: {x: 152.8772, y: 25.7263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &261758339
@@ -964,6 +989,7 @@ GameObject:
   - component: {fileID: 309605189}
   - component: {fileID: 309605188}
   - component: {fileID: 309605187}
+  - component: {fileID: 309605191}
   m_Layer: 5
   m_Name: CalculateButton
   m_TagString: Untagged
@@ -989,8 +1015,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.10218, y: -63.47487}
-  m_SizeDelta: {x: 135.7975, y: 19.0504}
+  m_AnchoredPosition: {x: 58.432, y: 45}
+  m_SizeDelta: {x: 119, y: 39.82166}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309605187
 MonoBehaviour:
@@ -1074,6 +1100,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309605185}
   m_CullTransparentMesh: 1
+--- !u!114 &309605191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309605185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d195cfd3599bfe64289c642e10589598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  field: {fileID: 0}
+  calcInputs:
+  - User Name
+  - Current Savings
+  - Investable Accounts
+  - Retirement Accounts
+  - Annual Expenses
+  - Safe WIthdrawal Rates
+  - Yearly Savings
+  - ' Press the Calculate Button'
+  text: {fileID: 0}
+  descriptionText: {fileID: 0}
+  descList:
+  - 'Current Savings:  total amount of money in your savings account.'
+  - 'Investable accounts: the amount of money invested  in brokerage, stocks, etc.'
+  - 'Retirement Account:  the amount of money in any retirement account you may have.'
+  - 'Annual Expenses: what you spend in a year. (monthly expenses * 12).'
+  - '  Safe Withdrawal Rate: a minimum percentage of money that you will withdraw
+    in retirement to cover your basic need expenses. The recommended percentage is
+    4%. Please enter a whole number.'
+  - 'Yearly Savings: the amount of money you save each year.'
+  enterButton: {fileID: 0}
+  i: 0
 --- !u!1 &376658786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,8 +1170,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 215.2772, y: -25.897}
-  m_SizeDelta: {x: 343.6968, y: 231.93}
+  m_AnchoredPosition: {x: -1.4476, y: -99.05772}
+  m_SizeDelta: {x: 261.27, y: 165.83546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &376658788
 MonoBehaviour:
@@ -1634,7 +1695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.7657, y: 85}
+  m_AnchoredPosition: {x: -607, y: 95.99999}
   m_SizeDelta: {x: 211.5314, y: 18.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &540014867
@@ -1774,7 +1835,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -242.5614, y: -129}
+  m_AnchoredPosition: {x: -579.7957, y: -118.00001}
   m_SizeDelta: {x: 152.8772, y: 25.7263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &542663596
@@ -2083,7 +2144,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54, y: 32}
+  m_AnchoredPosition: {x: -276.6, y: 58}
   m_SizeDelta: {x: 211.5314, y: 18.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &642038267
@@ -2220,7 +2281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.7657, y: 34}
+  m_AnchoredPosition: {x: -607, y: 44.99999}
   m_SizeDelta: {x: 211.5314, y: 18.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &670647603
@@ -2360,8 +2421,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42, y: 63}
-  m_SizeDelta: {x: 152.8772, y: 25.7263}
+  m_AnchoredPosition: {x: -13.7971, y: 101.9}
+  m_SizeDelta: {x: 210.40698, y: 57.793}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &738854088
 MonoBehaviour:
@@ -3034,8 +3095,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00083542, y: -2}
-  m_SizeDelta: {x: 716.97, y: 303.17}
+  m_AnchoredPosition: {x: -0.0016174, y: 0.00047302}
+  m_SizeDelta: {x: 258.38, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922879051
 MonoBehaviour:
@@ -3221,6 +3282,7 @@ GameObject:
   - component: {fileID: 1054696982}
   - component: {fileID: 1054696984}
   - component: {fileID: 1054696983}
+  - component: {fileID: 1054696985}
   m_Layer: 5
   m_Name: SafeWithdrawalRate.txt
   m_TagString: Untagged
@@ -3245,7 +3307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54, y: 81}
+  m_AnchoredPosition: {x: -36.34, y: 139.86}
   m_SizeDelta: {x: 211.5314, y: 18.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1054696983
@@ -3268,10 +3330,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Safe Withdrawal Rate:
-
-
-'
+  m_text: Name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3334,7 +3393,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 34.59427}
+  m_margin: {x: 21.075172, y: -8.5606575, z: -31.612732, w: -4.043443}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3348,6 +3407,211 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054696981}
   m_CullTransparentMesh: 1
+--- !u!114 &1054696985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054696981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d195cfd3599bfe64289c642e10589598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  field: {fileID: 0}
+  calcInputs:
+  - User Name
+  - Current Savings
+  - Investable Accounts
+  - Retirement Accounts
+  - Annual Expenses
+  - Safe WIthdrawal Rates
+  - Yearly Savings
+  - ' Press the Calculate Button'
+  text: {fileID: 0}
+  descriptionText: {fileID: 0}
+  descList:
+  - 'Current Savings:  total amount of money in your savings account.'
+  - 'Investable accounts: the amount of money invested  in brokerage, stocks, etc.'
+  - 'Retirement Account:  the amount of money in any retirement account you may have.'
+  - 'Annual Expenses: what you spend in a year. (monthly expenses * 12).'
+  - '  Safe Withdrawal Rate: a minimum percentage of money that you will withdraw
+    in retirement to cover your basic need expenses. The recommended percentage is
+    4%. Please enter a whole number.'
+  - 'Yearly Savings: the amount of money you save each year.'
+  enterButton: {fileID: 0}
+  i: 0
+--- !u!1 &1085344092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1085344093}
+  - component: {fileID: 1085344096}
+  - component: {fileID: 1085344095}
+  - component: {fileID: 1085344094}
+  - component: {fileID: 1085344097}
+  m_Layer: 5
+  m_Name: EnterButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1085344093
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085344092}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6.263123}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1737788340}
+  m_Father: {fileID: 1394791784}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -76.398, y: 42.068}
+  m_SizeDelta: {x: 105.58731, y: 38.137}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1085344094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085344092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1085344095}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1085344097}
+        m_TargetAssemblyTypeName: InputBehaviorScript, Assembly-CSharp
+        m_MethodName: fieldChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1085344095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085344092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1085344096
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085344092}
+  m_CullTransparentMesh: 1
+--- !u!114 &1085344097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085344092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d195cfd3599bfe64289c642e10589598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  field: {fileID: 738854088}
+  calcInputs:
+  - User Name
+  - Current Savings
+  - Investable Accounts
+  - Retirement Accounts
+  - Annual Expenses
+  - Safe WIthdrawal Rates
+  - Yearly Savings
+  - ' Press the Calculate Button'
+  text: {fileID: 1054696983}
+  descriptionText: {fileID: 1191495166}
+  descList:
+  - 'Current Savings:  total amount of money in your savings account.'
+  - 'Investable accounts: the amount of money invested  in brokerage, stocks, etc.'
+  - 'Retirement Account:  the amount of money in any retirement account you may have.'
+  - 'Annual Expenses: what you spend in a year. (monthly expenses * 12).'
+  - '  Safe Withdrawal Rate: a minimum percentage of money that you will withdraw
+    in retirement to cover your basic need expenses. The recommended percentage is
+    4%. Please enter a whole number.'
+  - 'Yearly Savings: the amount of money you save each year.'
+  enterButton: {fileID: 0}
+  i: 0
 --- !u!1 &1117012267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3383,7 +3647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.7657, y: -109}
+  m_AnchoredPosition: {x: -607, y: -98}
   m_SizeDelta: {x: 211.5314, y: 18.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1117012269
@@ -3518,8 +3782,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 294, y: 48}
-  m_SizeDelta: {x: 391.9397, y: 50}
+  m_AnchoredPosition: {x: -2.8926, y: -99.524}
+  m_SizeDelta: {x: 258.38, y: 164.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1191495166
 MonoBehaviour:
@@ -3541,14 +3805,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: " - Current Savings:  total amount of money in your savings account. \n-
-    Investable accounts: the amount of money invested  in brokerage, stocks, etc.
-    \n - Retirement Account:  the amount of money in any retirement account you may
-    have. \n - Annual Expenses: what you spend in a year. \n(monthly expenses * 12).
-    \n - Safe Withdrawal Rate: a minimum percentage of money that \nyou will withdraw
-    in retirement to cover your basic need expenses. The recommended percentage is
-    4%. Please enter a whole number. \n - Yearly Savings: the amount of money you
-    save each year."
+  m_text: Input your Name.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3611,7 +3868,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -52.48358, y: 0, z: 92.970825, w: 0}
+  m_margin: {x: 2.7058952, y: 5.9425793, z: 2.601017, w: -1.5227962}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3662,7 +3919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -242.5614, y: -40}
+  m_AnchoredPosition: {x: -579.7957, y: -29.000011}
   m_SizeDelta: {x: 152.8772, y: 25.7263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1207830415
@@ -3838,7 +4095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244, y: 12}
+  m_AnchoredPosition: {x: -581.2343, y: 22.999989}
   m_SizeDelta: {x: 152.8772, y: 25.7263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1221488511
@@ -3977,6 +4234,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221488509}
   m_CullTransparentMesh: 1
+--- !u!1 &1252945334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1252945337}
+  - component: {fileID: 1252945336}
+  - component: {fileID: 1252945335}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1252945335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252945334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1252945336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252945334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1252945337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252945334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1394791780
 GameObject:
   m_ObjectHideFlags: 0
@@ -4090,6 +4415,7 @@ RectTransform:
   - {fileID: 156383855}
   - {fileID: 1770715986}
   - {fileID: 540014866}
+  - {fileID: 1085344093}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4421,6 +4747,143 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664370750}
   m_CullTransparentMesh: 1
+--- !u!1 &1737788339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1737788340}
+  - component: {fileID: 1737788342}
+  - component: {fileID: 1737788341}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1737788340
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737788339}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1085344093}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1737788341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737788339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Enter
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1737788342
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737788339}
+  m_CullTransparentMesh: 1
 --- !u!1 &1770715985
 GameObject:
   m_ObjectHideFlags: 0
@@ -4458,7 +4921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244, y: 63}
+  m_AnchoredPosition: {x: -581.2343, y: 73.99999}
   m_SizeDelta: {x: 152.8772, y: 25.7263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1770715987
@@ -4738,7 +5201,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.7657, y: -65}
+  m_AnchoredPosition: {x: -607, y: -54.00001}
   m_SizeDelta: {x: 211.5314, y: 18.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1900645381
@@ -4876,7 +5339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.7657, y: -19}
+  m_AnchoredPosition: {x: -607, y: -8.0000105}
   m_SizeDelta: {x: 211.5314, y: 18.137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916889252
@@ -5442,7 +5905,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -439.41254, y: 0, z: 109.17926, w: 0}
+  m_margin: {x: -211.59436, y: -138.38548, z: 331.40683, w: 35.76256}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5763,7 +6226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -242.5614, y: -83}
+  m_AnchoredPosition: {x: -579.7957, y: -72.00001}
   m_SizeDelta: {x: 152.8772, y: 25.7263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140810188
