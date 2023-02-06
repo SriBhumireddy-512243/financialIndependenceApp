@@ -14,6 +14,7 @@ public class NewUser
 	public float annualExpenses;
 	public int safeWithdrawalRate;
 	public float yearlySavings;
+
 	
 //constructor
 	public NewUser(string name, float csavings, float iaccount, float raccount, float expenses, int rate, float ysavings)
@@ -26,6 +27,13 @@ public class NewUser
 	   safeWithdrawalRate = rate;
 	   yearlySavings = ysavings;
 	}	
+// toString method
+	/*public String toString()
+	{
+		//return getUserName + getCurrentSavings + getInvestableAccounts + getRetirementAccounts + getAnnualExpenses + getSafeWithdrawalRate + getYearlySavings;
+
+	}
+	*/
 // get methods
 	public String getUserName()
 	{
