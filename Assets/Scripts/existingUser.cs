@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
-public class existingUser {
+public class existingUser implements NewUser {
     
 	public String userName;
 	public float currentSavings;
