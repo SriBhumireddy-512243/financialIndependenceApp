@@ -19,6 +19,7 @@ public class CalculateFinancialindependence : MonoBehaviour {
     float safeWithdrawalRate;
     float yearlySavings;
 
+    public string[] lines = "";
     public void LoadUp()
     {
         if (System.IO.File.Exists(FILE_PATH1))
@@ -39,18 +40,19 @@ public class CalculateFinancialindependence : MonoBehaviour {
         answer.text = "Check";
     }
 
-    public string searchFile(string s, FILE_PATH1)
+    public string searchFileRecursively(string s, lines, int size)
     {
-        string result = "";
-        string[] lines = System.IO.File.ReadAllLines(FILE_PATH1);
-        for(int i = 0;i<lines.Length();i++)
+        size--;
+        if(size<0)
         {
-            if(lines[i].IndexOf(s}!=-1)
-            {
-            return lines[i].Substring(lines[i].IndexOf(s) + s.length());
-            }
-
+            return "";
         }
+        if(lines[i].IndexOf(s}!=-1)
+        {
+            return lines[i].Substring(lines[i].IndexOf(s) + s.length());
+        }
+            
+        return searchFileRecusion(s,lines, size)
 
     }
 
