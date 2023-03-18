@@ -39,6 +39,21 @@ public class CalculateFinancialindependence : MonoBehaviour {
         answer.text = "Check";
     }
 
+    public string searchFile(string s, FILE_PATH1)
+    {
+        string result = "";
+        string[] lines = System.IO.File.ReadAllLines(FILE_PATH1);
+        for(int i = 0;i<lines.Length();i++)
+        {
+            if(lines[i].IndexOf(s}!=-1)
+            {
+            return lines[i].Substring(lines[i].IndexOf(s) + s.length());
+            }
+
+        }
+
+    }
+
 
     void Start()
     {
