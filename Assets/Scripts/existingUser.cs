@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
-public class existingUser implements NewUser {
+public class existingUser {
     
 	public String userName;
 	public float currentSavings;
@@ -14,9 +14,30 @@ public class existingUser implements NewUser {
 	public int safeWithdrawalRate;
 	public float yearlySavings;
 	public String txtFileName;
-	
-	
-//constructor
+
+	// Load Method
+	public void Load()
+	{
+		txtFileName = "userdata";
+		string FILE_PATH = Application.persistentDataPath + "/" + txtFileName + ".txt";
+
+		if (System.IO.File.Exists(FILE_PATH))
+		{
+			string[] lines = System.IO.File.ReadAllLines(FILE_PATH);
+			userName = lines[0];
+			currentSavings = float.Parse(lines[1]);
+			investableAccounts = float.Parse(lines[2]);
+			retirementAccount = float.Parse(lines[3]);
+			annualExpenses = float.Parse(lines[4]);
+			safeWithdrawalRate = int.Parse(lines[5]);
+			yearlySavings = float.Parse(lines[6]);
+		}
+		else
+		{
+			Debug.Log("File not found");
+		}
+	}
+	//constructor
 	public existingUser(String name, float csavings, float iaccount, float raccount, float expenses, int rate, float ysavings, String tname)
 	{
 	   userName = name;

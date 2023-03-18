@@ -44,23 +44,49 @@ public class InputBehaviorScript : MonoBehaviour
     {
         string FILE_PATH = Application.persistentDataPath + "/userdata.txt";
         //StreamWriter sr = System.IO.File.CreateText(FILE_PATH);
-        using (StreamWriter sr = new StreamWriter(FILE_PATH))
+        using (StreamWriter swriter = new StreamWriter(FILE_PATH))
         {
-            sr.Write("a");
+            swriter.Write("a");
             //sr.Write(userCreation[0] + userCreation[1] + userCreation[2] + userCreation[3] + userCreation[4] + userCreation[5] + userCreation[6]);//userCreation[0] + userCreation[1] + userCreation[2] + userCreation[3] + userCreation[4] + userCreation[5] + userCreation[6]);
-            sr.WriteLine(string.Join(" ", userCreation));
-            sr.WriteLine("Post string a");
-            sr.Close();
+            swriter.WriteLine(string.Join(" ", userCreation));
+            swriter.WriteLine("Post string a");
+            swriter.Close();
         }
     }
 
+    public void WriteFileV2()
+    {
+        string FILE_PATH = Application.persistentDataPath + "/userdata.txt";
+
+        using (FileStream fs = File.Create(FILE_PATH))
+        {
+            string s = userCreation[0];
+            char[] ch = s.ToCharArray();
+            byte[] info = new UTF8Encoding(true).GetBytes(ch);
+            // Add some information to the file.
+            fs.Write(info, 0, info.Length);
+        }
+
+    }
     public void updateUserCreation(int i)
     {
         string userInput = field.text;
         userCreation[i] = userInput;
     }
 
-    
+    public bool isInt(string s)
+    {
+        int result;
+        if (int.TryParse(s,out result))
+        {
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
+    }
 
 
 

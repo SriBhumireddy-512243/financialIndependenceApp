@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: eaa245109c558404f8471b711899e76a
+  - enabled: 1
+    path: Assets/Scenes/EndScreen 2.unity
+    guid: 996f03ca7dea5c44da598af961f9399f
+  - enabled: 1
+    path: Assets/Scenes/ExistingUserListScreen.unity
+    guid: 7df35a623a629e34e9cfa9c217dec94c
+  - enabled: 1
+    path: Assets/Scenes/ExistingEdit.unity
+    guid: 28b575537172b85468f1ca9c087652a3
+  - enabled: 1
+    path: Assets/Scenes/PostEdit.unity
+    guid: e33be942938a7b048a26c96e9f20f779
   m_configObjects: {}
